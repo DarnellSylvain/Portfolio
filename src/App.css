@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+:root {
+	--textcolor: #9a9a9a;
+	--headercolor: #efefef;
+	--featurecolor: #64f398;
+	--cardcolor: #36373b;
+	--unnamed-color-ffffff: #ffffff;
+	--backgroundcolor: #2d2e32;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container__container {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	align-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+	font-size: 64px;
+	color: var(--headercolor);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+	font-size: 32px;
+	color: var(--headercolor);
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 25px;
+	color: var(--headercolor);
+	font-weight: normal;
+	font-family: "Montserrat", "Roboto";
+}
+
+p,
+li {
+	font-family: "Montserrat", "Roboto";
+	font-size: 16px;
+	list-style-type: none;
+	color: var(--textcolor);
+}
+
+a {
+	color: var(--headercolor);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--headercolor);
+}
+
+Link {
+	color: var(--headercolor);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+Link:visited {
+	color: var(--headercolor);
+}
+
+body {
+	background: var(--backgroundcolor);
+	font-family: Roboto, Montserrat;
+}
+
+.sideLine {
+	width: 1px;
+	height: 105px;
+	content: "";
+	background-color: var(--headercolor);
+	margin-left: 9.1px;
+}
+
+.sideSocials {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	left: 21px;
+}
+
+.sideSocials li {
+	margin-bottom: 16px;
+}
+
+.right {
+	position: fixed;
+	bottom: 0;
+	right: 31px;
+}
+
+.sideEmail {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100px;
+}
+
+.sideEmail p {
+	transform: rotate(90deg);
+	position: fixed;
+	right: -76px;
+	bottom: 216px;
+}
+
+li img {
+	object-fit: contain;
+	width: 19.71px;
+}
+
+@media screen and (max-width: 820px) {
+	.sideSocials {
+		display: none;
+	}
+
+	.sideEmail {
+		display: none;
+	}
+
+	.container__container {
+		margin: 0 auto;
+		padding: 0 20px;
+	}
 }

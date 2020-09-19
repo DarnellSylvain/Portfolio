@@ -1,0 +1,37 @@
+.education__container {
+	margin-top: 192px;
+}
+
+.education__content {
+	margin-top: 41px;
+	background-color: var(--cardcolor);
+	border-radius: 5px;
+	padding: 48px 51px;
+	box-shadow: 0px 3px 10px #00000029;
+}
+
+.education__content h3 {
+	margin-bottom: 16px;
+}
+
+.education__courses {
+	margin-left: 60px;
+}
+
+.education__courses li {
+	margin-bottom: 17px;
+}
+
+.education__courses li:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 414px) {
+	.education__container {
+		margin-top: 66px;
+	}
+
+	.education__courses {
+		margin-left: 20px;
+	}
+}

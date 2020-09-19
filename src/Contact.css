@@ -1,0 +1,34 @@
+.contact__container {
+	margin-top: 292px;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+.contact__container h1 {
+	margin-top: 130px;
+}
+
+.contact__container p {
+	max-width: 633px;
+	margin: 30px auto;
+}
+
+.contact__emailButton {
+	width: 89px;
+	height: 89px;
+	background-color: var(--featurecolor);
+	outline: none;
+	border: none;
+	border-radius: 50%;
+}
+
+.contact__emailButton img {
+	color: var(--backgroundcolor);
+	margin: auto;
+}
+
+@media screen and (max-width: 414px) {
+	.contact__container {
+		margin-top: 66px;
+	}
+}
