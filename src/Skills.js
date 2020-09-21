@@ -1,21 +1,9 @@
 import React, { useState } from "react";
 import "./Skills.css";
 import { Element } from "react-scroll";
-import { SlideDown } from "react-slidedown";
+
 import "react-slidedown/lib/slidedown.css";
-
-import penIMG from "./images/pen.png";
-import serverIMG from "./images/server.png";
-import codeIMG from "./images/code.png";
-import arrowIMG from "./images/arrowdown@2x.png";
-
-import adobexdIMG from "./images/adobexd@2x.png";
-import cssIMG from "./images/css@2x.png";
-import htmlIMG from "./images/html1.png";
-import javascriptIMG from "./images/javascriptlogo@2x.png";
-import reactIMG from "./images/react@2x.png";
 import mongoIMG from "./images/mongo@2x.png";
-import nodeIMG from "./images/node@2x.png";
 
 function Skills() {
 	const [designTech, setDesignTech] = useState(true);
@@ -33,7 +21,7 @@ function Skills() {
 				<div className="skill__card">
 					<span>
 						<h3>Design</h3>
-						<img src={penIMG} alt="pen"></img>
+						<i className="fas fa-pen fa-lg"></i>
 					</span>
 
 					<p>
@@ -44,7 +32,12 @@ function Skills() {
 
 					<div className="span" onClick={(e) => setDesignTech(!designTech)}>
 						<small>Technologies</small>
-						<img src={arrowIMG} alt="arrow down"></img>
+
+						{designTech ? (
+							<i className="fas fa-angle-down"></i>
+						) : (
+							<i className="fas fa-angle-up"></i>
+						)}
 					</div>
 
 					<ul
@@ -53,7 +46,10 @@ function Skills() {
 						}
 					>
 						<li>
-							<img src={adobexdIMG} alt="adode xd" />
+							<i
+								className="fab fa-adobe fa-3x"
+								style={{ color: "#592B49" }}
+							></i>
 							Adobe Xd
 						</li>
 					</ul>
@@ -61,7 +57,7 @@ function Skills() {
 				<div className="skill__card">
 					<span>
 						<h3>Front-End</h3>
-						<img src={codeIMG} alt="code"></img>
+						<i className="fas fa-code fa-lg"></i>
 					</span>
 
 					<p>
@@ -74,7 +70,11 @@ function Skills() {
 
 					<div className="span" onClick={() => setFrontEndTech(!frontEndTech)}>
 						<small>Technologies</small>
-						<img src={arrowIMG} alt="arrow down"></img>
+						{frontEndTech ? (
+							<i className="fas fa-angle-down"></i>
+						) : (
+							<i className="fas fa-angle-up"></i>
+						)}
 					</div>
 					<ul
 						className={
@@ -82,23 +82,39 @@ function Skills() {
 						}
 					>
 						<li>
-							<img src={htmlIMG} alt="html" style={{ width: "38px" }} /> HTML
+							<i
+								className="fab fa-html5 fa-3x"
+								style={{ color: "#E44D26" }}
+							></i>
+							HTML
 						</li>
 						<li>
-							<img src={javascriptIMG} alt="javascript" /> Javascript
+							<i
+								className="fab fa-js-square fa-3x"
+								style={{ color: "#E4A126" }}
+							></i>{" "}
+							Javascript
 						</li>
 						<li>
-							<img src={cssIMG} alt="css" /> CSS
+							<i
+								className="fab fa-css3-alt fa-3x"
+								style={{ color: "#264DE4" }}
+							></i>{" "}
+							CSS
 						</li>
 						<li>
-							<img src={reactIMG} alt="react" style={{ width: "48px" }} /> React
+							<i
+								className="fab fa-react fa-3x"
+								style={{ color: "#53C1DE" }}
+							></i>{" "}
+							React
 						</li>
 					</ul>
 				</div>
 				<div className="skill__card">
 					<span>
 						<h3>Back-End</h3>
-						<img src={serverIMG} alt="pen"></img>
+						<i className="fas fa-server fa-lg"></i>
 					</span>
 
 					<p>
@@ -109,7 +125,11 @@ function Skills() {
 
 					<div className="span" onClick={() => setBackEndTech(!backEndTech)}>
 						<small>Technologies</small>
-						<img src={arrowIMG} alt="arrow down"></img>
+						{backEndTech ? (
+							<i className="fas fa-angle-down"></i>
+						) : (
+							<i className="fas fa-angle-up"></i>
+						)}
 					</div>
 					<ul
 						className={
@@ -120,7 +140,11 @@ function Skills() {
 							<img src={mongoIMG} alt="mongo" /> MongoDB
 						</li>
 						<li>
-							<img src={nodeIMG} alt="adode xd" /> Node.JS
+							<i
+								className="fab fa-node-js fa-3x"
+								style={{ color: "#539E43" }}
+							></i>{" "}
+							Node.JS
 						</li>
 					</ul>
 				</div>

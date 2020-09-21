@@ -1,13 +1,13 @@
 .showcase__container {
 	/* border: solid 1px red; */
-	height: calc(100vh - 83px - 25px);
+	height: 100vh;
 	display: flex;
 	z-index: 50;
 	align-items: center;
 	justify-content: space-between;
 	max-width: 1288.56px;
 	margin: 0 auto;
-	margin-top: 25px;
+	/* margin-top: 25px; */
 }
 
 .showcaseInfo__tag {
@@ -38,7 +38,7 @@
 	/* border: 1px solid red; */
 }
 
-.showcase__container span img {
+.showcase__container span i {
 	padding-right: 11px;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .showcase__image {
-	max-width: 629px;
+	max-width: 589px;
 }
 .showcase__image img {
 	max-width: 100%;

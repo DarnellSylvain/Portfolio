@@ -1,5 +1,5 @@
 .skills__container {
-	margin-top: 196px;
+	margin-top: 96px;
 	max-width: 1200px;
 }
 
@@ -36,8 +36,8 @@
 	margin-bottom: 27px;
 }
 
-.skill__card span img {
-	width: 20px;
+.skill__card span i {
+	color: var(--featurecolor);
 }
 
 .skill__card p {
@@ -55,10 +55,12 @@
 	cursor: pointer;
 }
 
-.span img {
-	width: 7.5px;
+.span i {
 	object-fit: contain;
 	margin-left: 7.19px;
+	transition: all 0.2s ease;
+
+	/* color: var(--featurecolor); */
 }
 
 .span small {
@@ -84,6 +86,10 @@
 .technology__list li img {
 	width: 39px;
 	object-fit: contain;
+	margin-right: 15px;
+}
+
+.technology__list li i {
 	margin-right: 15px;
 }
 

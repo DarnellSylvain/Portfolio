@@ -1,13 +1,6 @@
 import React from "react";
 import "./Showcase.css";
 import showcaseImage from "./images/showcaseImage@2x.png";
-import envelope from "./images/envelope.png";
-import mapMarker from "./images/map-marker.png";
-
-import linkedinIMG from "./images/linkedin@2x.png";
-import twitterIMG from "./images/twitter@2x.png";
-import githubIMG from "./images/github@2x.png";
-import instagramIMG from "./images/instagram@2x.png";
 
 function Showcase() {
 	return (
@@ -18,7 +11,7 @@ function Showcase() {
 				</div>
 				<h1>Darnell Sylvain</h1>
 				<span>
-					<img src={envelope} alt="envelope icon"></img>
+					<i className="fas fa-envelope"></i>
 					<a
 						href="mailto:darnellsylvain@hotmail.co.uk"
 						target="_blank"
@@ -28,7 +21,7 @@ function Showcase() {
 					</a>
 				</span>
 				<span>
-					<img src={mapMarker} alt="map marker icon"></img>
+					<i className="fas fa-map-marker fm-lg"></i>
 					<p>London</p>
 				</span>
 				<ul className="showcase__socials">
@@ -38,7 +31,7 @@ function Showcase() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={linkedinIMG} alt="map marker icon"></img>
+							<i className="fab fa-linkedin-in fa-lg"></i>
 						</a>
 					</li>
 
@@ -48,11 +41,8 @@ function Showcase() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img
-								src={twitterIMG}
-								alt="map marker icon"
-								style={{ paddingTop: "2px" }}
-							></img>
+							<i className="fab fa-twitter fa-lg"></i>
+							{/* <img src={twitterIMG} alt="map marker icon"></img> */}
 						</a>
 					</li>
 					<li>
@@ -61,7 +51,7 @@ function Showcase() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={instagramIMG} alt="map marker icon"></img>
+							<i className="fab fa-instagram fa-lg"></i>
 						</a>
 					</li>
 					<li>
@@ -70,7 +60,7 @@ function Showcase() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={githubIMG} alt="map marker icon"></img>
+							<i className="fab fa-github fa-lg"></i>
 						</a>
 					</li>
 				</ul>

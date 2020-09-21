@@ -1,10 +1,7 @@
 .project__container {
-	margin-top: 196px;
-}
-.project__container {
 	max-width: 1200px;
 	margin: 0 auto;
-	margin-top: 196px;
+	margin-top: 96px;
 }
 
 .project__categories {
@@ -20,17 +17,18 @@
 	display: inline-block;
 	text-align: center;
 	padding: 10px 15px;
+	cursor: pointer;
 }
 
-/* .project__categories li {
+.project__categories li:focus {
 	border-bottom: 1px solid var(--featurecolor);
-	padding-bottom: 5px;
-} */
+}
 
 .project__cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 24px;
+	transition: all 0.2s ease;
 }
 
 .project__card img {
@@ -57,6 +55,8 @@
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
+	transition: all 2s ease;
+	cursor: pointer;
 }
 
 .project__cardText {
@@ -86,8 +86,6 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 24px;
 		justify-items: center;
-
-		width: ;
 	}
 
 	.project__card {
@@ -113,6 +111,6 @@
 	}
 
 	.project__card {
-		width: 384px;
+		min-width: 354px;
 	}
 }

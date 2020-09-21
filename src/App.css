@@ -1,11 +1,28 @@
-:root {
+.light {
+	--textcolor: #36373b;
+	--headercolor: #2d2e32;
+	--featurecolor: #5eb3f6;
+	--cardcolor: #fcfcfc;
+	--unnamed-color-ffffff: #ffffff;
+	--backgroundcolor: #ffffff;
+	--themebutton: rgb(228, 228, 228);
+
+	background-color: var(--backgroundcolor);
+}
+
+.dark {
 	--textcolor: #9a9a9a;
 	--headercolor: #efefef;
 	--featurecolor: #64f398;
 	--cardcolor: #36373b;
 	--unnamed-color-ffffff: #ffffff;
 	--backgroundcolor: #2d2e32;
+	--themebutton: #36373b;
 }
+
+/* Router {
+	background-color: var(--backgroundcolor);
+} */
 
 * {
 	margin: 0;
@@ -16,14 +33,16 @@
 }
 
 .container__container {
-	max-width: 1320px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 60px;
+	background-color: var(--backgroundcolor);
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	/* margin-top: 60px; */
 	align-self: center;
 }
 
@@ -115,11 +134,16 @@ body {
 	position: fixed;
 	right: -76px;
 	bottom: 216px;
+	color: var(--headercolor);
 }
 
 li img {
 	object-fit: contain;
 	width: 19.71px;
+}
+
+i {
+	color: var(--headercolor);
 }
 
 @media screen and (max-width: 820px) {
@@ -133,6 +157,6 @@ li img {
 
 	.container__container {
 		margin: 0 auto;
-		padding: 0 20px;
+		padding: 0 10px;
 	}
 }

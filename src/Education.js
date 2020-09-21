@@ -17,7 +17,16 @@ function Education() {
 				<ul className="education__courses">
 					<li>1. JavaScript Algorithms and Data Structures - FreeCodeCamp</li>
 					<li>2. The React Bootcamp by Bob Ziroll - Scrimba</li>
-					<li>3. The Web Developer Bootcamp by Colt Steele - Udemy</li>
+					<li>
+						3.{" "}
+						<a
+							href="https://ude.my/UC-2da03b04-2051-48b3-bbcc-bcfa9f91fe97"
+							target="_blank"
+						>
+							The Web Developer Bootcamp
+						</a>{" "}
+						by Colt Steele - Udemy
+					</li>
 					<li>
 						4. User Experience Design Essentials - Adobe XD UI UX Design by
 						Daniel Walter Scott

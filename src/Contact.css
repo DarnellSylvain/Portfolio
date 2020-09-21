@@ -1,5 +1,5 @@
 .contact__container {
-	margin-top: 292px;
+	margin-top: 192px;
 	text-align: center;
 	margin-bottom: 200px;
 }
@@ -20,11 +20,11 @@
 	outline: none;
 	border: none;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
-.contact__emailButton img {
+.contact__emailButton i {
 	color: var(--backgroundcolor);
-	margin: auto;
 }
 
 @media screen and (max-width: 414px) {

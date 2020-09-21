@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Header.css";
 import * as Scroll from "react-scroll";
-import { Link } from "react-router-dom";
+import { ThemeContext } from "../Context/ThemeContext";
 
-import linkedinIMG from "../images/linkedin@2x.png";
-import twitterIMG from "../images/twitter@2x.png";
-import githubIMG from "../images/github@2x.png";
-import instagramIMG from "../images/instagram@2x.png";
-
-const Header = () => {
+const Header = ({ isDarkMode, setIsDarkMode }) => {
+	const { toggleTheme, theme } = useContext(ThemeContext);
 	const ScrollLink = Scroll.Link;
 	const [menuSelected, setMenuSelected] = useState(false);
-	const [menuShow, setMenuShow] = useState(false);
+
 	return (
-		<div className="header">
+		<div className={`header ${theme}`}>
+			<div className="outer" onClick={() => toggleTheme()}>
+				<i className="fas fa-sun" style={{ color: "#F9D71C" }}></i>
+				<i className="fas fa-moon" style={{ color: "#D0D5D2" }}></i>
+				<div className={theme === "dark" ? "ball" : "ball move"}></div>
+			</div>
 			<ul className={menuSelected ? "header__nav show" : "header__nav"}>
 				<li>
 					<ScrollLink
@@ -23,6 +24,7 @@ const Header = () => {
 						duration={500}
 						offset={-92}
 						id="link"
+						onClick={() => setMenuSelected(false)}
 					>
 						About
 					</ScrollLink>
@@ -35,6 +37,7 @@ const Header = () => {
 						duration={500}
 						offset={-92}
 						id="link"
+						onClick={() => setMenuSelected(false)}
 					>
 						Skills
 					</ScrollLink>
@@ -47,6 +50,7 @@ const Header = () => {
 						duration={500}
 						offset={-92}
 						id="link"
+						onClick={() => setMenuSelected(false)}
 					>
 						Projects
 					</ScrollLink>
@@ -59,6 +63,7 @@ const Header = () => {
 						duration={500}
 						offset={-92}
 						id="link"
+						onClick={() => setMenuSelected(false)}
 					>
 						Education
 					</ScrollLink>
@@ -69,8 +74,9 @@ const Header = () => {
 						spy={true}
 						smooth={true}
 						duration={500}
-						offset={-300}
+						offset={-100}
 						id="link"
+						onClick={() => setMenuSelected(false)}
 					>
 						Contact
 					</ScrollLink>
@@ -82,7 +88,7 @@ const Header = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={linkedinIMG} alt="map marker icon"></img>
+							<i className="fab fa-linkedin-in fa-lg"></i>
 						</a>
 					</li>
 
@@ -92,7 +98,7 @@ const Header = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={twitterIMG} alt="map marker icon"></img>
+							<i className="fab fa-twitter fa-lg"></i>
 						</a>
 					</li>
 					<li>
@@ -101,7 +107,7 @@ const Header = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={instagramIMG} alt="map marker icon"></img>
+							<i className="fab fa-instagram fa-lg"></i>
 						</a>
 					</li>
 					<li>
@@ -110,7 +116,7 @@ const Header = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={githubIMG} alt="map marker icon"></img>
+							<i className="fab fa-github fa-lg"></i>
 						</a>
 					</li>
 				</ul>

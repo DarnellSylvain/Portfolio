@@ -2,8 +2,6 @@ import React from "react";
 import "./Contact.css";
 import { Element } from "react-scroll";
 
-import envelope from "./images/envelope.svg";
-
 function Contact() {
 	return (
 		<Element className="contact__container" id="contact">
@@ -18,9 +16,15 @@ function Contact() {
 				please do so via the email provided or message me on one of my social
 				media accounts!
 			</p>
-			<button className="contact__emailButton">
-				<img src={envelope} alt="envelope" />
-			</button>
+			<a
+				href="mailto:darnellsylvain@hotmail.co.uk"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<button className="contact__emailButton">
+					<i className="fas fa-envelope fa-2x"></i>
+				</button>
+			</a>
 		</Element>
 	);
 }

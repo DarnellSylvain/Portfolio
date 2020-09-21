@@ -1,10 +1,5 @@
 import React from "react";
 
-import linkedinIMG from "../images/linkedin@2x.png";
-import twitterIMG from "../images/twitter@2x.png";
-import githubIMG from "../images/github@2x.png";
-import instagramIMG from "../images/instagram@2x.png";
-
 function SideInfo() {
 	return (
 		<>
@@ -16,7 +11,7 @@ function SideInfo() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={linkedinIMG} alt="map marker icon"></img>
+							<i className="fab fa-linkedin-in fa-lg"></i>
 						</a>
 					</li>
 
@@ -26,7 +21,7 @@ function SideInfo() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={twitterIMG} alt="map marker icon"></img>
+							<i className="fab fa-twitter fa-lg"></i>
 						</a>
 					</li>
 					<li>
@@ -35,7 +30,7 @@ function SideInfo() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={instagramIMG} alt="map marker icon"></img>
+							<i className="fab fa-instagram fa-lg"></i>
 						</a>
 					</li>
 					<li>
@@ -44,7 +39,7 @@ function SideInfo() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={githubIMG} alt="map marker icon"></img>
+							<i className="fab fa-github fa-lg"></i>
 						</a>
 					</li>
 				</ul>
