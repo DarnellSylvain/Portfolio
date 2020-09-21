@@ -177,11 +177,7 @@
 	}
 
 	.header__socials {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		justify-items: end;
-		align-self: flex-end;
+		display: none;
 	}
 
 	.header__socials li {

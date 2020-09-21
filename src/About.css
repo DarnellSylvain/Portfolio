@@ -20,7 +20,7 @@
 	max-width: 530px;
 
 	object-fit: contain;
-	transform: translateX(-60px);
+	/* transform: translateX(-px); */
 }
 
 .h2__header {

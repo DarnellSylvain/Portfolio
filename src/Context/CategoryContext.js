@@ -8,37 +8,37 @@ function CategoryContextProvider({ children }) {
 		{
 			id: 2,
 			name: "Random Quote Machine",
-			img: "./images/RandomQuoteV2.JPG",
+			img: "./images/RandomQuoteV3.jpg",
 			type: "React",
 		},
 		{
 			id: 3,
 			name: "Weather App",
-			img: "./images/WeatherAppV3.JPG",
+			img: "./images/WeatherAppV4.jpg",
 			type: "React",
 		},
 		{
 			id: 4,
 			name: "Exchange App",
-			img: "./images/ExchangeAppV3.JPG",
+			img: "./images/ExchangeAppv4.jpg",
 			type: "React",
 		},
 		{
 			id: 5,
 			name: "Super Camp",
-			img: "./images/supercamp.png",
+			img: "./images/supercampv2.jpg",
 			type: "Node",
 		},
 		{
 			id: 6,
 			name: "Counter App",
-			img: "./images/CounterApp.JPG",
+			img: "./images/CounterAppV4.jpg",
 			type: "Web App",
 		},
 		{
 			id: 7,
 			name: "Maynooth Furniture",
-			img: "./images/maynooth.png",
+			img: "./images/maynoothv2.jpg",
 			type: "Web Design",
 		},
 	]);

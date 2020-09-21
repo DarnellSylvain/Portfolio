@@ -21,6 +21,10 @@
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
 }
 
 .contact__emailButton i {

@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import { Element } from "react-scroll";
 
-import selfIMG from "./images/DSC01666.jpg";
+import selfIMG from "./images/selfie.jpg";
 
 function About() {
 	return (

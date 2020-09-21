@@ -22,6 +22,7 @@ function Education() {
 						<a
 							href="https://ude.my/UC-2da03b04-2051-48b3-bbcc-bcfa9f91fe97"
 							target="_blank"
+							rel="noopener noreferrer"
 						>
 							The Web Developer Bootcamp
 						</a>{" "}

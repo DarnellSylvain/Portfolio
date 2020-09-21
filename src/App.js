@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, Suspense } from "react";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import Fade from "react-reveal/Fade";
@@ -21,27 +21,29 @@ function App() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
 	return (
-		<Router>
-			<Header
-				theme={theme}
-				isDarkMode={isDarkMode}
-				setIsDarkMode={setIsDarkMode}
-			/>
-			<div className={`container__container ${theme}`}>
-				<div className="container ">
-					<SideInfo />
-					<Showcase />
-					<Fade bottom>
-						<About />
-						<Skills />
-						<Projects />
-						<Education />
-						<Contact />
-					</Fade>
-					<Footer />
+		<Suspense fallback={<div>Loading</div>}>
+			<Router>
+				<Header
+					theme={theme}
+					isDarkMode={isDarkMode}
+					setIsDarkMode={setIsDarkMode}
+				/>
+				<div className={`container__container ${theme}`}>
+					<div className="container ">
+						<SideInfo />
+						<Showcase />
+						<Fade bottom>
+							<About />
+							<Skills />
+							<Projects />
+							<Education />
+							<Contact />
+						</Fade>
+						<Footer />
+					</div>
 				</div>
-			</div>
-		</Router>
+			</Router>
+		</Suspense>
 	);
 }
 

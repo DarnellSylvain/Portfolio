@@ -81,45 +81,49 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
 						Contact
 					</ScrollLink>
 				</li>
-				<ul className="header__socials">
-					<li>
-						<a
-							href="https://www.linkedin.com/in/darnell-sylvain-85987b166"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<i className="fab fa-linkedin-in fa-lg"></i>
-						</a>
-					</li>
+			</ul>
+			<ul className="header__socials">
+				<li>
+					<a
+						href="https://www.linkedin.com/in/darnell-sylvain-85987b166"
+						target="_blank"
+						rel="noopener noreferrer"
+						alt="Darnell's LinkedIn"
+					>
+						<i className="fab fa-linkedin-in fa-lg"></i>
+					</a>
+				</li>
 
-					<li>
-						<a
-							href="https://www.twitter.com/stillvain_"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<i className="fab fa-twitter fa-lg"></i>
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://www.instagram.com/darnellsylvain"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<i className="fab fa-instagram fa-lg"></i>
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://github.com/darnellsylvain"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<i className="fab fa-github fa-lg"></i>
-						</a>
-					</li>
-				</ul>
+				<li>
+					<a
+						href="https://www.twitter.com/stillvain_"
+						target="_blank"
+						rel="noopener noreferrer"
+						alt="Darnell's Twitter"
+					>
+						<i className="fab fa-twitter fa-lg"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.instagram.com/darnellsylvain"
+						target="_blank"
+						rel="noopener noreferrer"
+						alt="Darnell's Instagram"
+					>
+						<i className="fab fa-instagram fa-lg"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://github.com/darnellsylvain"
+						target="_blank"
+						rel="noopener noreferrer"
+						alt="Darnell's Github"
+					>
+						<i className="fab fa-github fa-lg"></i>
+					</a>
+				</li>
 			</ul>
 
 			<div

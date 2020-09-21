@@ -21,9 +21,9 @@ function Contact() {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<button className="contact__emailButton">
+				<div className="contact__emailButton">
 					<i className="fas fa-envelope fa-2x"></i>
-				</button>
+				</div>
 			</a>
 		</Element>
 	);
