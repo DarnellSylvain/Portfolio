@@ -12,12 +12,13 @@
 	box-shadow: 0px 3px 6px #00000029;
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	z-index: 20;
 	background-color: var(--backgroundcolor);
 	height: 83px;
 	width: 100%;
 	display: flex;
 	align-items: center;
+	opacity: 1;
 }
 
 .header__nav {

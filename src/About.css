@@ -20,7 +20,7 @@
 	max-width: 530px;
 
 	object-fit: contain;
-	/* transform: translateX(-px); */
+	transform: translateX(-50px);
 }
 
 .h2__header {
@@ -76,8 +76,12 @@
 	.about__image {
 		padding: 0;
 		margin-bottom: 30px;
+		transform: translateX();
 	}
 
+	.about__image img {
+		transform: translateX(-53px);
+	}
 	.about__info {
 		text-align: center;
 		margin: 0 auto;

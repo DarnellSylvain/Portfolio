@@ -37,7 +37,7 @@ function Showcase() {
 
 					<li>
 						<a
-							href="https://www.twitter.com/stillvain_"
+							href="https://www.twitter.com/darnellsylvain"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

@@ -3,7 +3,7 @@ import "./Header.css";
 import * as Scroll from "react-scroll";
 import { ThemeContext } from "../Context/ThemeContext";
 
-const Header = ({ isDarkMode, setIsDarkMode }) => {
+const Header = () => {
 	const { toggleTheme, theme } = useContext(ThemeContext);
 	const ScrollLink = Scroll.Link;
 	const [menuSelected, setMenuSelected] = useState(false);

@@ -2,7 +2,10 @@ import React from "react";
 import "./About.css";
 import { Element } from "react-scroll";
 
+import PDF from "./components/DarnellPDF.pdf";
+
 import selfIMG from "./images/selfie.jpg";
+import selfIMG1 from "./images/selfie.webp";
 
 function About() {
 	return (
@@ -14,7 +17,11 @@ function About() {
 			<div className="about__content">
 				<div className="image__container">
 					<div className="about__image">
-						<img src={selfIMG} alt="myself"></img>
+						<picture>
+							<source srcSet={selfIMG1} type="image/webp" />
+							<source srcSet={selfIMG} type="image/jpg" />
+							<img src={selfIMG} alt="myself"></img>
+						</picture>
 					</div>
 				</div>
 
@@ -37,7 +44,9 @@ function About() {
 						books.
 					</p>
 					<button>
-						<a href="/">Download CV</a>
+						<a href={PDF} target="_blank" rel="noopener noreferrer">
+							View CV
+						</a>
 					</button>
 				</div>
 			</div>

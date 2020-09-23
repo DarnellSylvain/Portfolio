@@ -2,6 +2,8 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	margin-top: 96px;
+	display: flex;
+	flex-direction: column;
 }
 
 .project__categories {
@@ -18,25 +20,34 @@
 	text-align: center;
 	padding: 10px 15px;
 	cursor: pointer;
+	position: relative;
+	transition: linear 0.3s;
 }
 
-.project__categories li:focus {
+.selected {
+	transition: linear 0.3s;
 	border-bottom: 1px solid var(--featurecolor);
 }
 
 .project__cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 24px;
+	grid-gap: 10px;
 	transition: all 0.2s ease;
+	z-index: 2;
 }
 
-.project__card img {
-	max-height: 100%;
+.project__card picture {
+	height: 206px;
+	width: 384px;
 	object-fit: cover;
 	transition: all 0.2s ease;
 	opacity: 1;
 	z-index: 5;
+}
+.project__card picture img {
+	height: 206px;
+	width: 384px;
 }
 
 .project__card img:hover {
@@ -46,7 +57,7 @@
 
 .project__card {
 	position: relative;
-	min-width: 338px;
+	width: 364px;
 	height: 206px;
 	background: var(--cardcolor);
 	content: "";
@@ -76,41 +87,74 @@
 	font-size: 20px;
 }
 
-@media screen and (max-width: 1187px) {
-	.project__container {
+@media screen and (max-width: 1236px) {
+	/* .project__container {
 		max-width: 700px;
+	} */
+
+	.project__cards {
+		justify-items: center;
+		transform: scale(0.8);
 	}
 
+	/* .project__card {
+		max-width: 338px;
+	} */
+}
+
+@media screen and (max-width: 1121px) {
 	.project__cards {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 24px;
-		justify-items: center;
-	}
-
-	.project__card {
-		max-width: 338px;
+		grid-gap: 14px;
+		transform: scale(1);
+		max-width: 900px;
+		align-self: center;
 	}
 }
+@media screen and (max-width: 919px) {
+	.project__cards {
+	}
 
+	/* .project__card {
+		min-width: 354px;
+	} */
+}
 @media screen and (max-width: 868px) {
 	.project__container {
 		margin-top: 66px;
 	}
 }
+@media screen and (max-width: 868px) {
+	.project__cards {
+		transform: scale(0.8);
+	}
+}
 
+@media screen and (max-width: 639px) {
+	.project__cards {
+		grid-template-columns: 1fr;
+		transform: scale(1);
+	}
+}
 @media screen and (max-width: 414px) {
 	.project__container {
 		margin-top: 66px;
 	}
 }
 
-@media screen and (max-width: 741px) {
-	.project__cards {
-		grid-template-columns: 1fr;
+@media screen and (max-width: 403px) {
+	.project__card {
+		height: 180.25px;
+		width: 336px;
 	}
 
-	.project__card {
-		min-width: 354px;
+	.project__card picture {
+		height: 180.25px;
+		width: 336px;
+	}
+	.project__card picture img {
+		height: 180.25px;
+		width: 336px;
 	}
 }

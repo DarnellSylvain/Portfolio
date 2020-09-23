@@ -1,6 +1,5 @@
 import React, { useContext, useState, Suspense } from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
 import Header from "./components/Header";
@@ -12,37 +11,46 @@ import Education from "./Education";
 import Contact from "./Contact";
 import Footer from "./components/Footer";
 import SideInfo from "./components/SideInfo";
+import Popup from "./components/Popup";
 
+import ProjectData from "./Data/ProjectData";
+
+import { CategoryContextProvider } from "./Context/CategoryContext";
 import { ThemeContext } from "./Context/ThemeContext";
 
 function App() {
 	const { theme } = useContext(ThemeContext);
 
-	const [isDarkMode, setIsDarkMode] = useState(false);
+	const [selectedProject, setSelectedProject] = useState({});
+
+	const setProjectModal = (id) => {
+		const Project = ProjectData.filter(
+			(project) => project.id.toString() === id
+		);
+		setSelectedProject(...Project);
+	};
 
 	return (
 		<Suspense fallback={<div>Loading</div>}>
-			<Router>
-				<Header
-					theme={theme}
-					isDarkMode={isDarkMode}
-					setIsDarkMode={setIsDarkMode}
-				/>
-				<div className={`container__container ${theme}`}>
-					<div className="container ">
-						<SideInfo />
-						<Showcase />
-						<Fade bottom>
-							<About />
-							<Skills />
-							<Projects />
-							<Education />
-							<Contact />
-						</Fade>
-						<Footer />
-					</div>
+			<Header />
+			<div className={`container__container ${theme}`}>
+				<div className="container ">
+					<SideInfo />
+					<Showcase />
+					<Fade bottom>
+						<About />
+						<Skills />
+						<CategoryContextProvider>
+							<Projects setProjectModal={setProjectModal} />
+						</CategoryContextProvider>
+						<Education />
+						<Contact />
+					</Fade>
+					<Footer />
+
+					<Popup project={selectedProject} />
 				</div>
-			</Router>
+			</div>
 		</Suspense>
 	);
 }
