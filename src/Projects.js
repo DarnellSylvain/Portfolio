@@ -14,8 +14,6 @@ function Projects({ setProjectModal }) {
 		setProjectModal(event.currentTarget.id);
 	};
 
-	const checkTech = () => {};
-	// .filter((item) => item.type === category)
 	const projectDisplay = () => {
 		if (category) {
 			return projects

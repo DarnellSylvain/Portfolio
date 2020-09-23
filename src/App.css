@@ -171,6 +171,7 @@ i {
 	background-color: var(--backgroundcolor);
 	border-radius: 5px;
 	width: 90%;
+	max-width: 1200px;
 	height: 566px;
 	display: flex;
 	justify-content: center;
