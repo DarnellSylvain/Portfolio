@@ -227,7 +227,6 @@ i {
 .btn__container {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
 .btn__container i {

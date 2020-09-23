@@ -3,6 +3,7 @@ import "./Projects.css";
 
 import { CategoryContext } from "./Context/CategoryContext";
 import { PopupContext } from "./Context/PopupContext";
+import ImgWithFallback from "./components/ImgWithFallBack";
 
 import { Element } from "react-scroll";
 
@@ -40,14 +41,20 @@ function Projects({ setProjectModal }) {
 							</p>
 							<h3>{project.name}</h3>
 						</div>
-						<picture>
-							{/* <source
+						<ImgWithFallback
+							src={require(`${project.productcardIMG}.webp`)}
+							fallback={require(`${project.productcardIMG}.jpg`)}
+							alt={`A screenshot of the ${project.name} project`}
+						/>
+
+						{/* <picture>
+							<source
 								srcSet={require(`${project.img}.webp`)}
 								type="image/webp"
-							/> */}
+							/>
 							<source srcSet={require(`${project.img}.jpg`)} type="image/jpg" />
 							<img src={require(`${project.img}.jpg`)} alt="myself"></img>
-						</picture>
+						</picture> */}
 					</div>
 				));
 		} else {
@@ -72,12 +79,16 @@ function Projects({ setProjectModal }) {
 						</p>
 						<h3>{project.name}</h3>
 					</div>
-					<picture>
-						{/* <source srcSet={require(`${project.img}.webp`)} type="image/webp" /> */}
+					<ImgWithFallback
+						src={require(`${project.productcardIMG}.webp`)}
+						fallback={require(`${project.productcardIMG}.jpg`)}
+						alt={`A screenshot of the ${project.name} project`}
+					/>
+					{/* <picture>
+						<source srcSet={require(`${project.img}.webp`)} type="image/webp" />
 						<source srcSet={require(`${project.img}.jpg`)} type="image/jpg" />
 						<img src={require(`${project.img}.jpg`)} alt="myself"></img>
-					</picture>
-					{/* // <img src={require(`${project.img}`)} alt="project"></img> */}
+					</picture> */}
 				</div>
 			));
 		}

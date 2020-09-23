@@ -24,9 +24,7 @@ function App() {
 	const [selectedProject, setSelectedProject] = useState({});
 
 	const setProjectModal = (id) => {
-		const Project = ProjectData.filter(
-			(project) => project.id.toString() === id
-		);
+		const Project = ProjectData.filter((project) => project.id === id);
 		setSelectedProject(...Project);
 	};
 
