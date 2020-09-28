@@ -3,7 +3,7 @@ import { PopupContext } from "../Context/PopupContext";
 
 import ImgWithFallback from "./ImgWithFallBack";
 
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 const Popup = ({ project }) => {
 	const { popup, togglePopup } = useContext(PopupContext);
@@ -80,7 +80,7 @@ const Popup = ({ project }) => {
 						togglePopup();
 					}}
 				>
-					<i className="fas fa-times fa-lg"></i>
+					<FaTimes></FaTimes>
 				</div>
 			</div>
 		</div>

@@ -55,6 +55,7 @@
 	max-width: 589px;
 }
 .showcase__image img {
+	width: 100%;
 }
 
 @media screen and (max-width: 463px) {
