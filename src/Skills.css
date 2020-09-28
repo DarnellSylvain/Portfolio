@@ -36,7 +36,7 @@
 	margin-bottom: 27px;
 }
 
-.skill__card span i {
+.skill__card span .i {
 	color: var(--featurecolor);
 }
 
@@ -55,12 +55,12 @@
 	cursor: pointer;
 }
 
-.span i {
+.span .arrow {
 	object-fit: contain;
 	margin-left: 7.19px;
 	transition: all 0.2s ease;
 
-	/* color: var(--featurecolor); */
+	color: var(--featurecolor);
 }
 
 .span small {
@@ -89,7 +89,7 @@
 	margin-right: 15px;
 }
 
-.technology__list li i {
+.technology__list li .i {
 	margin-right: 15px;
 }
 

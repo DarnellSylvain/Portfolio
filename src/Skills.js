@@ -3,7 +3,19 @@ import "./Skills.css";
 import { Element } from "react-scroll";
 
 import "react-slidedown/lib/slidedown.css";
-import mongoIMG from "./images/mongo@2x.png";
+
+import { SiAdobexd, SiMongodb, SiJavascript } from "react-icons/si";
+import {
+	FaPen,
+	FaCode,
+	FaServer,
+	FaAngleDown,
+	FaAngleUp,
+	FaHtml5,
+	FaCss3Alt,
+	FaReact,
+	FaNodeJs,
+} from "react-icons/fa";
 
 function Skills() {
 	const [designTech, setDesignTech] = useState(true);
@@ -21,7 +33,7 @@ function Skills() {
 				<div className="skill__card">
 					<span>
 						<h3>Design</h3>
-						<i className="fas fa-pen fa-lg"></i>
+						<FaPen className="i" size={22} />
 					</span>
 
 					<p>
@@ -34,9 +46,9 @@ function Skills() {
 						<small>Technologies</small>
 
 						{designTech ? (
-							<i className="fas fa-angle-down"></i>
+							<FaAngleDown className="arrow" />
 						) : (
-							<i className="fas fa-angle-up"></i>
+							<FaAngleUp className="arrow" />
 						)}
 					</div>
 
@@ -46,10 +58,11 @@ function Skills() {
 						}
 					>
 						<li>
-							<i
-								className="fab fa-adobe fa-3x"
-								style={{ color: "#592B49" }}
-							></i>
+							<SiAdobexd
+								size={36}
+								className="i"
+								style={{ color: "#DA2286", height: "48px" }}
+							/>
 							Adobe Xd
 						</li>
 					</ul>
@@ -57,7 +70,7 @@ function Skills() {
 				<div className="skill__card">
 					<span>
 						<h3>Front-End</h3>
-						<i className="fas fa-code fa-lg"></i>
+						<FaCode size={27} className="i" />
 					</span>
 
 					<p>
@@ -71,9 +84,9 @@ function Skills() {
 					<div className="span" onClick={() => setFrontEndTech(!frontEndTech)}>
 						<small>Technologies</small>
 						{frontEndTech ? (
-							<i className="fas fa-angle-down"></i>
+							<FaAngleDown className="arrow" />
 						) : (
-							<i className="fas fa-angle-up"></i>
+							<FaAngleUp className="arrow" />
 						)}
 					</div>
 					<ul
@@ -82,31 +95,38 @@ function Skills() {
 						}
 					>
 						<li>
-							<i
-								className="fab fa-html5 fa-3x"
-								style={{ color: "#E44D26" }}
-							></i>
+							<FaHtml5
+								size={36}
+								className="i"
+								style={{
+									color: "#E44D26",
+									height: "48px",
+								}}
+							/>
 							HTML
 						</li>
 						<li>
-							<i
-								className="fab fa-js-square fa-3x"
-								style={{ color: "#E4A126" }}
-							></i>{" "}
+							<SiJavascript
+								size={42}
+								className="i"
+								style={{ color: "#E4A126", height: "48px" }}
+							/>
 							Javascript
 						</li>
 						<li>
-							<i
-								className="fab fa-css3-alt fa-3x"
-								style={{ color: "#264DE4" }}
-							></i>{" "}
+							<FaCss3Alt
+								size={36}
+								className="i"
+								style={{ color: "#264DE4", height: "48px" }}
+							/>
 							CSS
 						</li>
 						<li>
-							<i
-								className="fab fa-react fa-3x"
-								style={{ color: "#53C1DE" }}
-							></i>{" "}
+							<FaReact
+								size={48}
+								className="i"
+								style={{ color: "#53C1DE", height: "48px" }}
+							/>
 							React
 						</li>
 					</ul>
@@ -114,7 +134,7 @@ function Skills() {
 				<div className="skill__card">
 					<span>
 						<h3>Back-End</h3>
-						<i className="fas fa-server fa-lg"></i>
+						<FaServer size={22} className="i" />
 					</span>
 
 					<p>
@@ -126,9 +146,9 @@ function Skills() {
 					<div className="span" onClick={() => setBackEndTech(!backEndTech)}>
 						<small>Technologies</small>
 						{backEndTech ? (
-							<i className="fas fa-angle-down"></i>
+							<FaAngleDown className="arrow" />
 						) : (
-							<i className="fas fa-angle-up"></i>
+							<FaAngleUp className="arrow" />
 						)}
 					</div>
 					<ul
@@ -137,13 +157,19 @@ function Skills() {
 						}
 					>
 						<li>
-							<img src={mongoIMG} alt="mongo" /> MongoDB
+							<SiMongodb
+								size={36}
+								className="i"
+								style={{ color: "#509646", height: "48px" }}
+							/>{" "}
+							MongoDB
 						</li>
 						<li>
-							<i
-								className="fab fa-node-js fa-3x"
-								style={{ color: "#539E43" }}
-							></i>{" "}
+							<FaNodeJs
+								size={36}
+								className="i"
+								style={{ color: "#539E43", height: "48px" }}
+							/>
 							Node.JS
 						</li>
 					</ul>

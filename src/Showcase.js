@@ -1,6 +1,17 @@
 import React from "react";
 import "./Showcase.css";
+import ImgWithFallback from "./components/ImgWithFallBack";
 import showcaseImage from "./images/showcaseImage@2x.png";
+import showcaseImagewebp from "./images/showcaseImage@2x.webp";
+
+import {
+	FaLinkedinIn,
+	FaTwitter,
+	FaInstagram,
+	FaGithub,
+	FaEnvelope,
+	FaMapMarker,
+} from "react-icons/fa";
 
 function Showcase() {
 	return (
@@ -11,7 +22,9 @@ function Showcase() {
 				</div>
 				<h1>Darnell Sylvain</h1>
 				<span>
-					<i className="fas fa-envelope"></i>
+					<FaEnvelope
+						style={{ marginRight: "10px", color: "var(--textcolor)" }}
+					/>
 					<a
 						href="mailto:darnellsylvain@hotmail.co.uk"
 						target="_blank"
@@ -21,7 +34,9 @@ function Showcase() {
 					</a>
 				</span>
 				<span>
-					<i className="fas fa-map-marker fm-lg"></i>
+					<FaMapMarker
+						style={{ marginRight: "10px", color: "var(--textcolor)" }}
+					/>
 					<p>London</p>
 				</span>
 				<ul className="showcase__socials">
@@ -30,8 +45,10 @@ function Showcase() {
 							href="https://www.linkedin.com/in/darnell-sylvain-85987b166"
 							target="_blank"
 							rel="noopener noreferrer"
+							alt="LinkedIn Icon Link"
 						>
-							<i className="fab fa-linkedin-in fa-lg"></i>
+							{/* <i className="fab fa-linkedin-in fa-lg"></i> */}
+							<FaLinkedinIn size={21} />
 						</a>
 					</li>
 
@@ -40,9 +57,9 @@ function Showcase() {
 							href="https://www.twitter.com/darnellsylvain"
 							target="_blank"
 							rel="noopener noreferrer"
+							alt="Twitter Icon Link"
 						>
-							<i className="fab fa-twitter fa-lg"></i>
-							{/* <img src={twitterIMG} alt="map marker icon"></img> */}
+							<FaTwitter size={21} />
 						</a>
 					</li>
 					<li>
@@ -50,8 +67,9 @@ function Showcase() {
 							href="https://www.instagram.com/darnellsylvain"
 							target="_blank"
 							rel="noopener noreferrer"
+							alt="Instagram Icon Link"
 						>
-							<i className="fab fa-instagram fa-lg"></i>
+							<FaInstagram size={21} />
 						</a>
 					</li>
 					<li>
@@ -59,15 +77,22 @@ function Showcase() {
 							href="https://github.com/darnellsylvain"
 							target="_blank"
 							rel="noopener noreferrer"
+							alt="Github Icon Link"
 						>
-							<i className="fab fa-github fa-lg"></i>
+							<FaGithub size={21} />
 						</a>
 					</li>
 				</ul>
 			</div>
 
 			<div className="showcase__image">
-				<img src={showcaseImage} alt="web dev"></img>
+				<ImgWithFallback
+					src={showcaseImagewebp}
+					fallback={showcaseImage}
+					alt={`HTML, CSS and Javascript swirling around globe icon like atom`}
+				/>
+
+				{/* <img src={showcaseImage} alt="web dev"></img> */}
 			</div>
 		</div>
 	);

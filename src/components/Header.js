@@ -3,6 +3,8 @@ import "./Header.css";
 import * as Scroll from "react-scroll";
 import { ThemeContext } from "../Context/ThemeContext";
 
+import { FaSun, FaMoon } from "react-icons/fa";
+
 const Header = () => {
 	const { toggleTheme, theme } = useContext(ThemeContext);
 	const ScrollLink = Scroll.Link;
@@ -11,8 +13,8 @@ const Header = () => {
 	return (
 		<div className={`header ${theme}`}>
 			<div className="outer" onClick={() => toggleTheme()}>
-				<i className="fas fa-sun" style={{ color: "#F9D71C" }}></i>
-				<i className="fas fa-moon" style={{ color: "#D0D5D2" }}></i>
+				<FaSun style={{ color: "#F9D71C" }} />
+				<FaMoon style={{ color: "#D0D5D2" }} />
 				<div className={theme === "dark" ? "ball" : "ball move"}></div>
 			</div>
 			<ul className={menuSelected ? "header__nav show" : "header__nav"}>

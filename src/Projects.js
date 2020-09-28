@@ -25,7 +25,7 @@ function Projects({ setProjectModal }) {
 						key={project.id}
 						className="project__card"
 						onClick={(e) => {
-							document.body.classList.toggle("stopScroll");
+							document.body.classList.add("stopScroll");
 							togglePopup();
 							handleModal(e);
 						}}
@@ -42,19 +42,10 @@ function Projects({ setProjectModal }) {
 							<h3>{project.name}</h3>
 						</div>
 						<ImgWithFallback
-							src={require(`${project.productcardIMG}.webp`)}
-							fallback={require(`${project.productcardIMG}.jpg`)}
+							src={require(`${project.projectcardIMG}.webp`)}
+							fallback={require(`${project.projectcardIMG}.jpg`)}
 							alt={`A screenshot of the ${project.name} project`}
 						/>
-
-						{/* <picture>
-							<source
-								srcSet={require(`${project.img}.webp`)}
-								type="image/webp"
-							/>
-							<source srcSet={require(`${project.img}.jpg`)} type="image/jpg" />
-							<img src={require(`${project.img}.jpg`)} alt="myself"></img>
-						</picture> */}
 					</div>
 				));
 		} else {
@@ -65,7 +56,7 @@ function Projects({ setProjectModal }) {
 					className="project__card"
 					onClick={(e) => {
 						togglePopup();
-						document.body.classList.toggle("stopScroll");
+						document.body.classList.add("stopScroll");
 						handleModal(e);
 					}}
 				>
@@ -80,15 +71,10 @@ function Projects({ setProjectModal }) {
 						<h3>{project.name}</h3>
 					</div>
 					<ImgWithFallback
-						src={require(`${project.productcardIMG}.webp`)}
-						fallback={require(`${project.productcardIMG}.jpg`)}
+						src={require(`${project.projectcardIMG}.webp`)}
+						fallback={require(`${project.projectcardIMG}.jpg`)}
 						alt={`A screenshot of the ${project.name} project`}
 					/>
-					{/* <picture>
-						<source srcSet={require(`${project.img}.webp`)} type="image/webp" />
-						<source srcSet={require(`${project.img}.jpg`)} type="image/jpg" />
-						<img src={require(`${project.img}.jpg`)} alt="myself"></img>
-					</picture> */}
 				</div>
 			));
 		}

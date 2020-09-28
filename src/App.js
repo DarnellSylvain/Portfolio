@@ -12,10 +12,7 @@ import Contact from "./Contact";
 import Footer from "./components/Footer";
 import SideInfo from "./components/SideInfo";
 import Popup from "./components/Popup";
-
 import ProjectData from "./Data/ProjectData";
-
-import { CategoryContextProvider } from "./Context/CategoryContext";
 import { ThemeContext } from "./Context/ThemeContext";
 
 function App() {
@@ -29,7 +26,7 @@ function App() {
 	};
 
 	return (
-		<Suspense fallback={<div>Loading</div>}>
+		<Suspense fallback={<p>Loading</p>}>
 			<Header />
 			<div className={`container__container ${theme}`}>
 				<div className="container ">
@@ -38,9 +35,9 @@ function App() {
 					<Fade bottom>
 						<About />
 						<Skills />
-						<CategoryContextProvider>
-							<Projects setProjectModal={setProjectModal} />
-						</CategoryContextProvider>
+
+						<Projects setProjectModal={setProjectModal} />
+
 						<Education />
 						<Contact />
 					</Fade>

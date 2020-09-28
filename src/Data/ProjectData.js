@@ -1,10 +1,10 @@
 // Date Model
 // id - string/number ✔️
 // name - string ✔️
-// productcardIMG - string ✔️
+// projectcardIMG - string ✔️
 // projectphotoIMG - string
 // technologies - list ✔️
-// description - string
+// description - string✔️
 // type = list  ✔️
 // githubURL ✔️
 // websiteURL✔️
@@ -13,7 +13,14 @@ const ProjectData = [
 	{
 		id: "2",
 		name: "Random Quote Machine",
-		productcardIMG: "./images/RandomQuoteV3",
+		projectcardIMG: "./images/RandomQuoteV3",
+		projectphotoIMG: [
+			{
+				webp: require("../images/RandomQuoteV3.webp"),
+				jpg: require("../images/RandomQuoteV3.jpg"),
+				imgDesc: "",
+			},
+		],
 		type: ["React"],
 		technologies: ["React", "Javascript", "CSS"],
 		githubURL: "https://github.com/DarnellSylvain/randomQuoteMachine",
@@ -24,7 +31,20 @@ const ProjectData = [
 	{
 		id: "3",
 		name: "Weather App",
-		productcardIMG: "./images/WeatherAppV4",
+		projectcardIMG: "./images/WeatherAppV4",
+		projectphotoIMG: [
+			{
+				webp: require("../images/WeatherAppV4.webp"),
+				jpg: require("../images/WeatherAppV4.jpg"),
+				imgDesc: "",
+			},
+			{
+				webp: require("../images/weatherapp.webp"),
+				jpg: require("../images/weatherapp.jpg"),
+				imgDesc: "",
+			},
+			// ADD PHOTO OF WHEN CITY IS SHOWN AND BACKGROUND HAS CHANGED
+		],
 		type: ["React"],
 		technologies: ["React", "Javascript", "CSS"],
 		githubURL: "https://github.com/DarnellSylvain/weatherApp",
@@ -35,7 +55,14 @@ const ProjectData = [
 	{
 		id: "4",
 		name: "Exchange App",
-		productcardIMG: "./images/ExchangeAppv4",
+		projectcardIMG: "./images/ExchangeAppv4",
+		projectphotoIMG: [
+			{
+				webp: require("../images/ExchangeAppv4.webp"),
+				jpg: require("../images/ExchangeAppv4.jpg"),
+				imgDesc: "",
+			},
+		],
 		type: ["React"],
 		technologies: ["React", "Javascipt"],
 		githubURL: "https://github.com/DarnellSylvain/exchangeApp",
@@ -46,7 +73,24 @@ const ProjectData = [
 	{
 		id: "5",
 		name: "Super Camp",
-		productcardIMG: "./images/supercampv2",
+		projectcardIMG: "./images/supercampv2",
+		projectphotoIMG: [
+			{
+				webp: require("../images/supercampv2.webp"),
+				jpg: require("../images/supercampv2.jpg"),
+				imgDesc: "Landing Page",
+			},
+			{
+				webp: require("../images/supercampIndex.webp"),
+				jpg: require("../images/supercampIndex.jpg"),
+				imgDesc: "Index Page",
+			},
+			{
+				webp: require("../images/supercampShow.webp"),
+				jpg: require("../images/supercampShow.jpg"),
+				imgDesc: "Individual post Page",
+			},
+		],
 		type: ["Node", "React"],
 		technologies: ["Node", "MongoDB", "Javascript", "EJS", "Passport"],
 		githubURL: "https://github.com/DarnellSylvain/SuperCamp",
@@ -57,7 +101,14 @@ const ProjectData = [
 	{
 		id: "6",
 		name: "Counter App",
-		productcardIMG: "./images/CounterAppV4",
+		projectcardIMG: "./images/CounterAppV4",
+		projectphotoIMG: [
+			{
+				webp: require("../images/CounterAppV4.webp"),
+				jpg: require("../images/CounterAppV4.jpg"),
+				imgDesc: "",
+			},
+		],
 		type: ["Web App"],
 		technologies: ["React", "Javascript", "HTML", "CSS"],
 		githubURL: "https://github.com/DarnellSylvain/counterReactProject",
@@ -67,7 +118,25 @@ const ProjectData = [
 	{
 		id: "7",
 		name: "Maynooth Furniture",
-		productcardIMG: "./images/maynoothv2",
+		projectcardIMG: "./images/maynoothv2",
+		projectphotoIMG: [
+			{
+				webp: require("../images/maynoothIMGV1.webp"),
+				jpg: require("../images/maynoothIMGV1.jpg"),
+				imgDesc: "This is a picture of the home page",
+			},
+			{
+				webp: require("../images/maynoothIMGV4.webp"),
+				jpg: require("../images/maynoothIMGV4.jpg"),
+				imgDesc: "This is a picture of the living room page",
+			},
+			{
+				webp: require("../images/maynoothIMG3.webp"),
+				jpg: require("../images/maynoothIMG3.jpg"),
+				imgDesc: "Product page",
+			},
+		],
+
 		type: ["Web Design"],
 		technologies: ["Web Design", "React"],
 		githubURL: "https://github.com/DarnellSylvain/maynooth",

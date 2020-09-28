@@ -6,16 +6,14 @@ const CategoryContext = React.createContext();
 
 function CategoryContextProvider({ children }) {
 	const [category, setCategory] = useState("");
-	const [projects, setProjects] = useState(ProjectData);
+	const [projects] = useState(ProjectData);
 
 	const toggleCategory = (categories) => {
 		setCategory(categories);
 	};
 
 	return (
-		<CategoryContext.Provider
-			value={{ category, toggleCategory, projects, setProjects }}
-		>
+		<CategoryContext.Provider value={{ category, toggleCategory, projects }}>
 			{children}
 		</CategoryContext.Provider>
 	);

@@ -2,6 +2,8 @@ import React from "react";
 import "./Contact.css";
 import { Element } from "react-scroll";
 
+import { FaEnvelope } from "react-icons/fa";
+
 function Contact() {
 	return (
 		<Element className="contact__container" id="contact">
@@ -22,7 +24,7 @@ function Contact() {
 				rel="noopener noreferrer"
 			>
 				<div className="contact__emailButton">
-					<i className="fas fa-envelope fa-2x"></i>
+					<FaEnvelope size={32} style={{ color: "var(--backgroundcolor)" }} />
 				</div>
 			</a>
 		</Element>

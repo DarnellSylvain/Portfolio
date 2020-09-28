@@ -229,7 +229,7 @@ i {
 	align-items: center;
 }
 
-.btn__container i {
+.btn__container .icon {
 	color: var(--backgroundcolor);
 }
 
