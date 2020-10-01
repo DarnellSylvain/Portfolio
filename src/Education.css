@@ -22,6 +22,14 @@
 	margin-bottom: 17px;
 }
 
+.education__courses a {
+	text-decoration: underline;
+}
+
+.education__courses a:hover {
+	color: var(--featurecolor);
+}
+
 .education__courses li:last-child {
 	margin-bottom: 0;
 }

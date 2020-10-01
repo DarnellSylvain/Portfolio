@@ -12,7 +12,12 @@ const Header = () => {
 
 	return (
 		<div className={`header ${theme}`}>
-			<div className="outer" onClick={() => toggleTheme()}>
+			<div
+				className="outer"
+				onClick={() => {
+					toggleTheme();
+				}}
+			>
 				<FaSun style={{ color: "#F9D71C" }} />
 				<FaMoon style={{ color: "#D0D5D2" }} />
 				<div className={theme === "dark" ? "ball" : "ball move"}></div>
