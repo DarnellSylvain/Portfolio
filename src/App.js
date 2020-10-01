@@ -26,7 +26,7 @@ function App() {
 	};
 
 	return (
-		<Suspense fallback={<p>Loading</p>}>
+		<Suspense fallback={() => <p>Loading</p>}>
 			<Header />
 			<div className={`container__container ${theme}`}>
 				<div className="container ">

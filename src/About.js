@@ -29,9 +29,8 @@ function About() {
 					<p>
 						Hello I'm Darnell, a web developer based in London, UK.
 						<br />
-						<br /> I enjoy bringing ideas to life on the internet, whether it be
-						other people's ideas or my own, through creation of websites and
-						applications.
+						<br /> I enjoy bringing ideas to life on the internet through
+						creation of websites and applications.
 						<br />
 						<br />
 						After obtaining a bachelors degree in Mechanical Engineering, I

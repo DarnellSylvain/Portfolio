@@ -19,7 +19,7 @@ function Contact() {
 				media accounts!
 			</p>
 			<a
-				href="mailto:darnellsylvain@hotmail.co.uk"
+				href="mailto:darnellsylvain@gmail.com"
 				target="_blank"
 				rel="noopener noreferrer"
 			>

@@ -10,24 +10,24 @@
 // websiteURL✔️
 
 const ProjectData = [
-	{
-		id: "2",
-		name: "Random Quote Machine",
-		projectcardIMG: "./images/RandomQuoteV3",
-		projectphotoIMG: [
-			{
-				webp: require("../images/RandomQuoteV3.webp"),
-				jpg: require("../images/RandomQuoteV3.jpg"),
-				imgDesc: "",
-			},
-		],
-		type: ["React"],
-		technologies: ["React", "Javascript", "CSS"],
-		githubURL: "https://github.com/DarnellSylvain/randomQuoteMachine",
-		liveURL: "",
-		description:
-			"The Random Quote Machine is an application that generates a random quote at the press of button. Each time a new quote is displayed, the theme colour also changes. This project was one of my first projects created and my first experience with API's",
-	},
+	// {
+	// 	id: "2",
+	// 	name: "Random Quote Machine",
+	// 	projectcardIMG: "./images/RandomQuoteV3",
+	// 	projectphotoIMG: [
+	// 		{
+	// 			webp: require("../images/RandomQuoteV3.webp"),
+	// 			jpg: require("../images/RandomQuoteV3.jpg"),
+	// 			imgDesc: "",
+	// 		},
+	// 	],
+	// 	type: ["React"],
+	// 	technologies: ["React", "Javascript", "CSS"],
+	// 	githubURL: "https://github.com/DarnellSylvain/randomQuoteMachine",
+	// 	liveURL: "",
+	// 	description:
+	// 		"The Random Quote Machine is an application that generates a random quote at the press of button. Each time a new quote is displayed, the theme colour also changes. This project was one of my first projects created and my first experience with API's",
+	// },
 	{
 		id: "3",
 		name: "Weather App",
@@ -92,29 +92,36 @@ const ProjectData = [
 			},
 		],
 		type: ["Node", "React"],
-		technologies: ["Node", "MongoDB", "Javascript", "EJS", "Passport"],
+		technologies: [
+			"Node",
+			"MongoDB",
+			"Javascript",
+			"EJS",
+			"Passport",
+			"Bootstrap",
+		],
 		githubURL: "https://github.com/DarnellSylvain/SuperCamp",
 		liveURL: "https://super-camp.herokuapp.com/",
 		description:
-			"This is my Web Development Bootcamp capstone project, completed by myself. Super Camp is a NodeJS project where people can sign up and post a character. They can include a name, an image, a description and their alleigance. Other users can then view the posts and make comments.",
+			"This is my Web Development Bootcamp capstone project, completed by myself. Super Camp is a NodeJS project where people can sign up and post a character. They can include a name, an image, a description and their allegiance. Other users can then view the posts and make comments.",
 	},
-	{
-		id: "6",
-		name: "Counter App",
-		projectcardIMG: "./images/CounterAppV4",
-		projectphotoIMG: [
-			{
-				webp: require("../images/CounterAppV4.webp"),
-				jpg: require("../images/CounterAppV4.jpg"),
-				imgDesc: "",
-			},
-		],
-		type: ["Web App"],
-		technologies: ["React", "Javascript", "HTML", "CSS"],
-		githubURL: "https://github.com/DarnellSylvain/counterReactProject",
-		liveURL: "",
-		description: "My first project using React. A simple counter application.",
-	},
+	// {
+	// 	id: "6",
+	// 	name: "Counter App",
+	// 	projectcardIMG: "./images/CounterAppV4",
+	// 	projectphotoIMG: [
+	// 		{
+	// 			webp: require("../images/CounterAppV4.webp"),
+	// 			jpg: require("../images/CounterAppV4.jpg"),
+	// 			imgDesc: "",
+	// 		},
+	// 	],
+	// 	type: ["Web App"],
+	// 	technologies: ["React", "Javascript", "HTML", "CSS"],
+	// 	githubURL: "https://github.com/DarnellSylvain/counterReactProject",
+	// 	liveURL: "",
+	// 	description: "My first project using React. A simple counter application.",
+	// },
 	{
 		id: "7",
 		name: "Maynooth Furniture",

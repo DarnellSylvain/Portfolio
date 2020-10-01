@@ -54,7 +54,7 @@ function SideInfo() {
 			</div>
 			<div className="sideEmail right">
 				<a
-					href="mailto:darnellsylvain@hotmail.co.uk"
+					href="mailto:darnellsylvain@gmail.com"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
