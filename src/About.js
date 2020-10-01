@@ -27,7 +27,7 @@ function About() {
 
 				<div className="about__info">
 					<p>
-						Hello I'm Darnell, a web developer based in London, UK.
+						Hey, I'm Darnell, a web developer based in London, UK.
 						<br />
 						<br /> I enjoy bringing ideas to life on the internet through
 						creation of websites and applications.
