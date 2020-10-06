@@ -15,7 +15,7 @@ const Popup = ({ project }) => {
 					<div className="popup__info">
 						<h2>{project.name}</h2>
 						<p>{project.description}</p>
-						<p>Created using React</p>
+
 						<ul className="tech__list">
 							{project.technologies
 								? project.technologies.map((tech) => <li key={tech}>{tech}</li>)

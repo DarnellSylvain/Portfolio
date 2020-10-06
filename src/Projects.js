@@ -111,12 +111,12 @@ function Projects({ setProjectModal }) {
 				>
 					Node
 				</li>
-				<li
+				{/* <li
 					className={category === "Web App" ? "selected" : null}
 					onClick={() => toggleCategory("Web App")}
 				>
 					Web App
-				</li>
+				</li> */}
 			</ul>
 
 			<div className="project__cards">{projectDisplay()}</div>

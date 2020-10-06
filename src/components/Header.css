@@ -37,6 +37,7 @@
 
 .header__nav li {
 	color: var(--headercolor);
+	font-weight: bold;
 }
 
 .navbar-btn {

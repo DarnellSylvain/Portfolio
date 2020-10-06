@@ -210,9 +210,11 @@ i {
 	display: inline-block;
 	padding: 7px 10px;
 	margin-right: 15px;
-	border: 1px solid var(--featurecolor);
+	/* border: 1px solid var(--featurecolor); */
 	border-radius: 5px;
 	margin-bottom: 20px;
+	color: var(--backgroundcolor);
+	background-color: var(--featurecolor);
 }
 
 .popup__image {
